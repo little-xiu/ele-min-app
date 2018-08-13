@@ -1,0 +1,25 @@
+<wxs src="../../wxs/handleImgPath.wxs" module="handleImgPath"></wxs>
+<view class="header">
+  <text class='address'>{{address}}</text>
+</view>
+<scroll-view scroll-y="{{true}}">
+  <swiper class='swiper' indicator-dots="{{true}}">
+    <block wx:for="{{bannerList}}" wx:for-index="i" wx:for-item="menu" wx:key="i">
+      <swiper-item class="swiper-slide">
+        <block wx:for="{{menu}}" wx:key="index">
+          <view class='banner-item'>
+            <image src='{{handleImgPath(item.img,130)}}'></image>
+            <text>{{item.name}}</text>
+          </view>
+        </block>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='recom-shoptit'>推荐商家</view>
+  <block wx:for="{{shopsList}}" wx:key="index">
+    <view class='shops'>
+      <image src='{{handleImgPath(item.img,188)}}'></image>
+      <text>{{item.name}}</text>
+    </view>
+  </block>
+</scroll-view>

@@ -1,0 +1,47 @@
+/* pages/home/home.wxss */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 128rpx;
+  padding-top: 40rpx;
+  box-sizing: border-box;
+  background: linear-gradient(90deg,#0af,#0085ff);
+}
+.address {
+  line-height: 88rpx;
+}
+scroll-view {
+  padding-top: 128rpx;
+  width: 100%;
+  height: 100%;
+  box-sizing:border-box;
+
+}
+.recom-shoptit {
+  text-align: center;
+}
+.swiper {
+  height: 460rpx;
+}
+.swiper-slide {
+  display: flex;
+  flex-wrap: wrap;
+}
+.banner-item {
+  width: 20%;
+  text-align: center;
+}
+.banner-item image {
+  width: 130rpx;
+  height: 130rpx;
+}
+.banner-item text {
+  text-align: center;
+  font-size: 26rpx;
+}
+.shops image {
+  width: 188rpx;
+  height: 188rpx;
+}
